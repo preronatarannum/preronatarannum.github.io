@@ -8,10 +8,10 @@ A single-page static site (plain HTML and CSS, no build step) for GitHub Pages.
 | --- | --- |
 | `index.html` | All page content. Edit text here. |
 | `style.css` | Colors, fonts and layout. |
+| `script.js` | Publication topic filter and the highlighted link in the top bar. |
 | `favicon.svg` | The browser-tab icon. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is. |
 | `cv.pdf` | **You add this.** Linked from the "CV (PDF)" button. |
-| `photo.jpg` | **Optional.** Shown beside your name; hidden automatically if missing. |
 
 ## Put it online (about 5 minutes)
 
@@ -38,14 +38,17 @@ git push -u origin main
 
 - **Add `cv.pdf`.** Use a public version of your CV *without* your home address and
   phone number. The website itself leaves both out on purpose.
-- **Add a photo (optional).** Save a portrait as `photo.jpg` (roughly 4:5, at least 480×600 px).
 - **Add your GitHub link (optional).** In `index.html`, copy one of the `<li>` lines in the
   `links` list and point it at `https://github.com/<your-username>`.
 
 ## Keeping it current
 
 - New paper: copy an `<li>` block in the Publications section and edit the title, authors,
-  venue and link. Wrap your own name in `<span class="me">…</span>`.
+  venue and links. Wrap your own name in `<span class="me">…</span>`. Set `data-tags` to any of
+  `misinfo`, `multilingual`, `llm` so the topic filter picks it up.
+- News: add a new `<li>` at the top of the News list and drop the oldest when it gets past six or so.
+- Update the paper counts in the facts strip under the hero when they change.
+- Your Bangla name above the English one is in the line with `class="bn-name"`; correct the spelling there if needed.
 - When a chapter is accepted, move it from "Under review" into its year.
 - Update the "Last updated" line in the footer.
 - After you accept a PhD offer, change the "Applying to PhD programs for Fall 2027" line

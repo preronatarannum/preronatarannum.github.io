@@ -48,6 +48,7 @@ git push -u origin main
   `misinfo`, `multilingual`, `llm` so the topic filter picks it up.
 - News: add a new `<li>` at the top of the News list and drop the oldest when it gets past six or so.
 - Update the paper counts in the facts strip under the hero when they change.
+- To change your photo, replace `photo.jpg` (portrait, 4:5, about 800×1000 px).
 - Your Bangla name above the English one is in the line with `class="bn-name"`; correct the spelling there if needed.
 - When a chapter is accepted, move it from "Under review" into its year.
 - Update the "Last updated" line in the footer.

@@ -11,6 +11,7 @@
   <meta property="og:description" content="Trustworthy NLP and misinformation research. Applying to PhD programs for Fall 2027.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://preronatarannum.github.io/">
+  <meta property="og:image" content="https://preronatarannum.github.io/photo.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#6B1D2E">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -24,6 +25,7 @@
     "@type": "Person",
     "name": "Prerona Tarannum",
     "url": "https://preronatarannum.github.io/",
+    "image": "https://preronatarannum.github.io/photo.jpg",
     "email": "mailto:prerona.tarannum@unb.ca",
     "jobTitle": "M.Sc. researcher in Computer Science",
     "affiliation": { "@type": "CollegeOrUniversity", "name": "University of New Brunswick" },
@@ -74,8 +76,7 @@
 
         <p class="seeking"><span class="dot" aria-hidden="true"></span>Applying to PhD programs for Fall 2027</p>
         <p class="affil">
-          M.Sc. researcher in Computer Science at the University of New Brunswick, DTIS Lab,
-          Canadian Institute for Cybersecurity. Supervised by
+          Masters in Computer Science at the University of New Brunswick, DTIS Lab. Supervised by
           <a href="https://www.unb.ca/faculty-staff/directory/computer-science/hakak-saqib.html">Dr. Saqib Hakak</a>.
         </p>
 
@@ -87,31 +88,8 @@
         </ul>
       </div>
 
-      <figure class="feed" aria-label="Example of check-worthiness detection">
-        <figcaption class="feed-head">Is this worth fact-checking?</figcaption>
-        <ol class="claims">
-          <li class="claim">
-            <span class="lang">English</span>
-            <p lang="en">Drinking hot water every hour cures the flu.</p>
-            <span class="verdict yes">Check-worthy</span>
-          </li>
-          <li class="claim">
-            <span class="lang">বাংলা</span>
-            <p lang="bn">আমার প্রিয় রং নীল।</p>
-            <span class="verdict no">Not check-worthy</span>
-          </li>
-          <li class="claim">
-            <span class="lang">Español</span>
-            <p lang="es">El 80% de los ríos del país está contaminado.</p>
-            <span class="verdict yes">Check-worthy</span>
-          </li>
-          <li class="claim">
-            <span class="lang">العربية</span>
-            <p lang="ar" dir="rtl">الشاي لذيذ جداً</p>
-            <span class="verdict no">Not check-worthy</span>
-          </li>
-        </ol>
-        <p class="feed-foot">The task behind my CLEF CheckThat! systems, which placed as high as 3rd across Arabic, Spanish and English.</p>
+      <figure class="portrait">
+        <img src="photo.jpg" alt="Prerona Tarannum" width="800" height="1000" fetchpriority="high">
       </figure>
     </div>
   </section>
@@ -119,9 +97,9 @@
   <!-- ============ FACTS STRIP ============ -->
   <section class="facts" aria-label="At a glance">
     <dl class="wrap facts-grid">
-      <div><dt>Now</dt><dd>M.Sc. Computer Science, UNB, CGPA 4.00 / 4.30</dd></div>
+      <div><dt>Now</dt><dd>MSc Computer Science, UNB, CGPA 4.00 / 4.30</dd></div>
       <div><dt>Papers</dt><dd>10 in total, 5 as first author</dd></div>
-      <div><dt>Languages</dt><dd>Bangla, English, Arabic, Spanish, Dutch</dd></div>
+      <div><dt>Bachelor</dt><dd>BSc in Computer Science and Engineering, DIU, CGPA 3.98 / 4.00</dd></div>
       <div><dt>Teaching</dt><dd>TA for 6 courses in Canada and Bangladesh</dd></div>
     </dl>
   </section>
@@ -130,12 +108,42 @@
     <!-- ============ RESEARCH ============ -->
     <section class="section" id="research" aria-labelledby="research-h">
       <div class="wrap">
-        <h2 id="research-h">Research</h2>
-        <p class="lede">
-          My research sits where natural language processing meets information credibility. I want AI systems
-          that are reliable, generalize beyond the data they were trained on, and are honest about what they
-          do not know. Three threads run through my work so far.
-        </p>
+        <div class="research-intro">
+          <div>
+            <h2 id="research-h">Research</h2>
+            <p class="lede">
+                I study how AI systems judge whether information can be trusted, and where that judgment quietly fails. I began with misinformation detection during my B.Sc. in Bangladesh, building check-worthiness systems for CLEF CheckThat! (3rd for Arabic and 5th for English in the 2023 multimodal subtask) and comparing methods for Bangla sentiment analysis. Working across languages taught me how much aggregate scores can hide.
+
+                In my M.Sc. at the University of New Brunswick, I predict fake news virality at the moment of publication. Models that look accurate turn out to lean on who published an article: linguistic features add little beyond publisher identity and generalize poorly to unseen publishers. This work received the Best Poster Award at UNB's 2026 Research Expo, and it raised the question that now drives me: does a language model judging credibility mistake its own unfamiliarity with an event for evidence that a claim is false?
+            </p>
+          </div>
+        <figure class="feed" aria-label="Example of check-worthiness detection">
+          <figcaption class="feed-head">Is this worth fact-checking?</figcaption>
+          <ol class="claims">
+            <li class="claim">
+              <span class="lang">English</span>
+              <p lang="en">Drinking hot water every hour cures the flu.</p>
+              <span class="verdict yes">Check-worthy</span>
+            </li>
+            <li class="claim">
+              <span class="lang">বাংলা</span>
+              <p lang="bn">আমার প্রিয় রং নীল। (My favourite color is blue.)</p>
+              <span class="verdict no">Not check-worthy</span>
+            </li>
+            <li class="claim">
+              <span class="lang">Español</span>
+              <p lang="es">El 80% de los ríos del país está contaminado.</p>
+              <span class="verdict yes">Check-worthy</span>
+            </li>
+            <li class="claim">
+              <span class="lang">العربية</span>
+              <p lang="ar" dir="rtl">الشاي لذيذ جداً</p>
+              <span class="verdict no">Not check-worthy</span>
+            </li>
+          </ol>
+          <p class="feed-foot">The task behind my CLEF CheckThat! systems, which placed as high as 3rd across Arabic, Spanish and English.</p>
+        </figure>
+        </div>
 
         <div class="themes">
           <article class="theme">
@@ -171,27 +179,47 @@
       </div>
     </section>
 
-    <!-- ============ PHD DIRECTION (band) ============ -->
-    <section class="band" aria-labelledby="next-h">
-      <div class="wrap band-inner">
-        <h2 id="next-h">What I want to work on in my PhD</h2>
-        <p>
-          Epistemic uncertainty in language models: how a system can recognize that it lacks the knowledge to judge
-          a claim, rather than mistaking unfamiliar information for false information. This matters most for
-          underrepresented languages and cultural contexts, where a model's gaps are largest and its confident
-          mistakes are hardest to catch.
-        </p>
-      </div>
-    </section>
+      <!-- ============ PHD DIRECTION (band) ============ -->
+      <section class="band" aria-labelledby="next-h">
+          <div class="wrap band-inner">
+              <h2 id="next-h">What I want to work on in my PhD</h2>
+              <div class="band-text">
+                  <p class="band-lead">
+                      When a claim first spreads, the evidence about it is often incomplete. A language model asked to judge it may
+                      call an unfamiliar event false instead of recognizing that it cannot yet decide. I want to build AI systems that
+                      <strong>tell these cases apart</strong>, use new evidence responsibly, and help people decide what to check before
+                      they share. My work draws on natural language processing, computational social science and human-computer interaction.
+                  </p>
+                  <ol class="strands">
+                      <li>
+                          <h3>Measure the novelty penalty</h3>
+                          <p>A time-stamped benchmark of emerging claims, verified outcomes, early attention and available evidence. With it, I'd test whether models are especially likely to reject true claims about events newer than their training data, and whether claims that spread fastest pay the highest price.</p>
+                      </li>
+                      <li>
+                          <h3>Build an evidence-aware verifier</h3>
+                          <p>A system that answers supported, refuted or unresolved, abstains when evidence is thin, and weighs sources by provenance, publication time and independent corroboration, so fabricated evidence can't fool it.</p>
+                      </li>
+                      <li>
+                          <h3>Study the people who rely on it</h3>
+                          <p>Interviews with fact-checkers and randomized user studies on how a model's expressed uncertainty changes what people check and share, including a study with Bangla-speaking participants.</p>
+                      </li>
+                  </ol>
+                  <p>
+                      The goal is credibility systems that stay reliable across new events, unfamiliar sources and the languages people
+                      actually use, and that know when an answer is justified.
+                  </p>
+              </div>
+          </div>
+      </section>
 
     <!-- ============ NEWS ============ -->
     <section class="section" id="news" aria-labelledby="news-h">
       <div class="wrap">
-        <h2 id="news-h">News</h2>
+        <h2 id="news-h">Recent News</h2>
         <ul class="news">
           <li><span class="date">Fall 2026</span><span>Reviewing for the AAAI-27 workshop on Disinformation and Misinformation under the Lens of Generative AI Safety.</span></li>
           <li><span class="date">Fall 2026</span><span>Teaching assistant for CS4865/6865 Data Communication and Network Modeling at UNB.</span></li>
-          <li><span class="date">2026</span><span>Won the Best Poster Award at the UNB Faculty of Computer Science Research Expo.</span></li>
+          <li><span class="date">Winter 2026</span><span>Won the Best Poster Award at the UNB Faculty of Computer Science Research Expo.</span></li>
           <li><span class="date">Winter 2026</span><span>Teaching assistant for CS4411/6411 Software Security at UNB.</span></li>
           <li><span class="date">Sep 2025</span><span>Started my M.Sc. at the University of New Brunswick in the DTIS Lab, Canadian Institute for Cybersecurity.</span></li>
         </ul>
@@ -428,7 +456,7 @@
           <article class="teach">
             <p class="when">Jun 2024 – Dec 2024</p>
             <h3>Daffodil International University</h3>
-            <p class="org">Undergraduate Teaching Assistant</p>
+            <p class="org">Graduate Teaching Assistant</p>
             <ul class="courses">
               <li>Research and Innovation</li>
               <li>Data Mining and Machine Learning</li>
